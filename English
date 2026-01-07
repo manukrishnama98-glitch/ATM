@@ -1,0 +1,6 @@
+public class EnglishConversationService implements ConversationService {
+    public String welcomeMessage() { return "Welcome to the ATM!"; }
+    public String askPin() { return "Please enter your PIN:"; }
+    public String successMessage() { return "Transaction successful."; }
+    public String failureMessage() { return "Invalid PIN. Try again."; }
+}
