@@ -1,0 +1,6 @@
+public class MalayalamConversationService implements ConversationService {
+    public String welcomeMessage() { return "ATM-ലേക്ക് സ്വാഗതം!"; }
+    public String askPin() { return "ദയവായി നിങ്ങളുടെ പിൻ നൽകുക:"; }
+    public String successMessage() { return "ട്രാൻസാക്ഷൻ വിജയകരമായി പൂർത്തിയായി."; }
+    public String failureMessage() { return "തെറ്റായ പിൻ. വീണ്ടും ശ്രമിക്കുക."; }
+}
