@@ -1,0 +1,21 @@
+public class ATM {
+    private ConversationService service;
+    private final String correctPin = "1234";
+
+    public ATM(ConversationService service) {
+        this.service = service;
+    }
+
+    public void start() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(service.welcomeMessage());
+        System.out.println(service.askPin());
+        String pin = sc.nextLine();
+
+        if (pin.equals(correctPin)) {
+            System.out.println(service.successMessage());
+        } else {
+            System.out.println(service.failureMessage());
+        }
+    }
+}
