@@ -1,0 +1,6 @@
+public interface ConversationService {
+    String welcomeMessage();
+    String askPin();
+    String successMessage();
+    String failureMessage();
+}
